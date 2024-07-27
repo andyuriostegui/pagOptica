@@ -1,0 +1,152 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(to right, #df331f, #92a4ec); 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+/* Estilos de la sección de servicios */
+.services-section {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.services-section h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #6700b5f5;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.service img {
+    width: 40%;
+    height: auto;
+}
+
+.service-info {
+    padding: 1rem;
+    width: 60%;
+}
+
+.service-info h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.service-info p {
+    margin: 0;
+    color: #666;
+}
+
+/* Estilos de la sección de marcas */
+.brand-section {
+    padding: 20px 0;
+    background-color: #fff; /* Fondo blanco para la sección */
+    text-align: center;
+}
+
+.brand-section h2 {
+    color: #6700b5f5; /* Color del título */
+}
+
+.brand {
+    width: 200px; /* Ancho fijo para cada marca */
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borde alrededor de cada marca */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px;
+}
+
+.brand img {
+    width: 100%; /* Ajustar imagen al tamaño del contenedor */
+    height: auto; /* Mantener proporciones */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+.brand h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333; /* Color del nombre de la marca */
+}
+/* Estilos del footer */
+footer {
+    background: linear-gradient(to right, #df331f, #92a4ec); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6700b5f5; /* Color del ícono al pasar el mouse */
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}

@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background: linear-gradient(to right, #df331f, #92a4ec); 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Estilos de la sección de descripción de promociones */
+.promo-description {
+    padding: 20px 0;
+    background-color: #fff; /* Fondo blanco para la sección */
+    text-align: center;
+}
+
+.promo-description h2 {
+    color: #6700b5f5; /* Color del título */
+}
+
+.promo-description p {
+    margin: 20px 0;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6700b5f5; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #be0d0d; /* Color de fondo del botón al pasar el mouse */
+}
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(to right, #df331f, #92a4ec); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6700b5f5; /* Color del ícono al pasar el mouse */
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}

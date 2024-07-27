@@ -1,0 +1,160 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    color: #333; /* Texto principal gris oscuro */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+    height: 80px; /* Altura específica para el header */
+    background: linear-gradient(to right, #df331f, #92a4ec); /* Degradado de rojo a azul */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Asegurarse de que el contenedor llene todo el header */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #ddd;
+}
+
+/* Estilos del perfil */
+.perfil-container {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-container h1 {
+    text-align: center;
+    color: #4e54c8; /* Morado */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #4e54c8; /* Morado */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2b2fa1; /* Morado más oscuro */
+}
+.perfil-picture {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 200px; /* Ancho del contenedor */
+    height: 200px; /* Altura del contenedor */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde */
+}
+
+.perfil-picture img {
+    width: 100%; /* La imagen ocupa todo el espacio del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 50%; /* Hace que la imagen tenga forma circular */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border: 5px solid #fff; /* Borde blanco alrededor de la imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+
+/* Estilos del footer */
+footer {
+    background: linear-gradient(to right, #df331f, #92a4ec); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6700b5f5; /* Color del ícono al pasar el mouse */
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}

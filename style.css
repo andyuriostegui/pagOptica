@@ -1,0 +1,417 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    color: #333; /* Texto principal gris oscuro */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+    height: 300px; /* Altura específica para el header */
+    background-image: url('img/banner.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    background-position: center; /* Centrar la imagen en el contenedor */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%; /* Asegurarse de que el contenedor llene todo el header */
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+}
+
+.nav-menu li a {
+    color: #be0d0d;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #ddd;
+}
+
+/* Estilos del héroe */
+.hero {
+    text-align: center;
+    padding: 50px 20px; /* Ajustar el padding para que encaje mejor en el header */
+    color: #1c1a1a;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 2.5em; /* Reducir el tamaño de la fuente para que encaje mejor */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #8471f4;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff5e62; /* Rojo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff3f43; /* Rojo más oscuro al hacer hover */
+}
+
+/* Estilos del slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos de las imágenes del slider */
+.slider img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de secciones */
+.services, .products {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.services h2, .products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4e54c8; /* Morado */
+}
+
+.services-grid, .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.services-grid .service, .products-grid .product {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.services-grid .service:hover, .products-grid .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de secciones de servicios */
+.service-section {
+    padding: 40px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+#servicio1 {
+    background-image: url('img/examen.png'); /* Ruta de la imagen para el servicio 1 */
+}
+
+#servicio2 {
+    background-image: url('img/venta.png'); /* Ruta de la imagen para el servicio 2 */
+}
+
+#servicio3 {
+    background-image: url('img/reparacion.png'); /* Ruta de la imagen para el servicio 3 */
+}
+
+#servicio4 {
+    background-image: url('img/asesoramiento.png'); /* Ruta de la imagen para el servicio 4 */
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4e54c8; /* Color morado para el título */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.services-grid .service-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-grid .service-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-section {
+    padding: 40px;
+    text-align: center;
+    color: #fcf7f7;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+#mas-vendidos {
+    background-image: url('img/vendidos.png'); /* Agrega la imagen correspondiente */
+}
+
+#recomendados {
+    background-image: url('img/recomendados.png'); /* Agrega la imagen correspondiente */
+}
+
+#mujeres {
+    background-image: url('img/mujer.png'); /* Agrega la imagen correspondiente */
+}
+
+#hombres {
+    background-image: url('img/hombre.png'); /* Agrega la imagen correspondiente */
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4e54c8; /* Morado */
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.products-grid .product-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.products-grid .product-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de la sección de comentarios */
+.comments {
+    padding: 2rem 0;
+    background-color: #f9f9f9;
+}
+
+.comments h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: #4e54c8; /* Morado */
+}
+
+.comments-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.comment {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.comment h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.comment p {
+    margin: 0 0 0.5rem 0;
+}
+
+.comment small {
+    color: #888;
+}
+
+.register-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4e54c8; /* Morado */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #3d439d; /* Morado más oscuro */
+    transform: translateY(-5px);
+}
+
+.register-btn:active {
+    transform: translateY(0);
+}
+/* Estilos del footer */
+footer {
+    background: linear-gradient(to right, #df331f, #92a4ec); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #6700b5f5; /* Color del ícono al pasar el mouse */
+}
+
+.footer-text {
+    text-align: center;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hours-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hours-container i {
+    cursor: pointer;
+    color: #333;
+}
